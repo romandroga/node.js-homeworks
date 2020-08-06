@@ -10,7 +10,7 @@ const {
 } = require("../helpers");
 
 const REQUIRED_FIELDS = ["name", "email", "phone"];
-const CONPATH = path.dirname(__dirname) + "/db/contacts.json";
+const CONPATH = __dirname + "/../db/contacts.json"
 
 const contactsController = {
   get: ({ params: { id } }) => {
